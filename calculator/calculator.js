@@ -1,4 +1,3 @@
-// Get all the keys from document
 var keys = document.querySelectorAll('#calculator span');
 var operators = ['+', '-', 'x', '÷'];
 var decimalAdded = false;
@@ -17,13 +16,13 @@ for (var i = 0; i < keys.length; i++) {
             if (operators.indexOf(lastChar) > -1 || lastChar == '.')
                 equation = equation.replace(/.$/, '');
             if (equation)
-                input.innerHTML = eval(equation);
+                input.innerHTML = (new Function('return ' + equation))();
             decimalAdded = false;
         } else if (operators.indexOf(btnVal) > -1) {
             var lastChar = inputVal[inputVal.length - 1];
-            if (inputVal != '' && operators.indexOf(lastChar) == -1)
+            if (inputVal !== '' && operators.indexOf(lastChar) == -1)
                 input.innerHTML += btnVal;
-            else if (inputVal == '' && btnVal == '-')
+            else if (inputVal === '' && btnVal == '-')
                 input.innerHTML += btnVal;
             if (operators.indexOf(lastChar) > -1 && inputVal.length > 1) {
                 input.innerHTML = inputVal.replace(/.$/, btnVal);
@@ -38,5 +37,5 @@ for (var i = 0; i < keys.length; i++) {
             input.innerHTML += btnVal;
         }
         e.preventDefault();
-    }
+    };
 }
