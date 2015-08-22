@@ -44,3 +44,5 @@ function calculate(e) {
     }
     e.preventDefault();
 }
+
+calculate(e);
