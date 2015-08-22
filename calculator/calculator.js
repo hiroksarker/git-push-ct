@@ -1,4 +1,4 @@
-var keys = document.querySelectorAll('#calculator span');
+var keys = document.querySelectorAll('.calculator span');
 var operators = ['+', '-', 'x', 'รท'];
 var decimalAdded = false;
 for (var i = 0; i < keys.length; i++) {
