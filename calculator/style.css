@@ -10,9 +10,7 @@ body {
     width: 287px;
     height: 100%;
     margin: 100px auto;
-    padding-left: 10px;
-    padding-top: 10px;
-    padding-right: 9px;
+    padding: 20px 20px 9px;
     background: #9dd2ea;
     background: linear-gradient(#9dd2ea, #8bceec);
     border-radius: 3px;
@@ -25,7 +23,7 @@ body {
     height: 40px;
     width: 194px;
     float: right;
-    padding-right: 17px;
+    padding: 0 10px;
     background: rgba(0, 0, 0, 0.2);
     border-radius: 3px;
     box-shadow: 0 4px rgba(0, 0, 0, 0.2) inset;
