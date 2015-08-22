@@ -1,16 +1,14 @@
-* {
+body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-html {
     height: 100%;
     background: white;
     background: radial-gradient(circle, #fff 20%, #ccc);
     background-size: cover;
 }
 #calculator {
-    width: 325px;
+    width: 287px;
     height: 100%;
     margin: 100px auto;
     padding: 20px 20px 9px;
@@ -24,7 +22,7 @@ html {
 }
 .top .screen {
     height: 40px;
-    width: 212px;
+    width: 194px;
     float: right;
     padding: 0 10px;
     background: rgba(0, 0, 0, 0.2);
@@ -58,44 +56,44 @@ html {
     text-align: center;
     transition: all 0.2s ease;
 }
-.keys span.operator {
+.keys > .operator {
     background: #FFF0F5;
     margin-right: 0;
 }
-.keys span.cale {
+.keys > .cale {
     background: #f1ff92;
     box-shadow: 0 4px #9da853;
     color: #888e5f;
 }
-.top span.clear {
+.top > .clear {
     background: #ff9fa8;
     box-shadow: 0 4px #ff7c87;
     color: white;
 }
-.keys span:hover {
+.keys > span:hover {
     background: #9c89f6;
     box-shadow: 0 4px #6b54d3;
     color: white;
 }
-.keys span.cale:hover {
+.keys > .cale:hover {
     background: #abb850;
     box-shadow: 0 4px #717a33;
     color: #ffffff;
 }
-.top span.clear:hover {
+.top > .clear:hover {
     background: #f68991;
     box-shadow: 0 4px #d3545d;
     color: white;
 }
-.keys span:active {
+.keys > span:active {
     box-shadow: 0 0 #6b54d3;
     top: 4px;
 }
-.keys span.cale:active {
+.keys > .cale:active {
     box-shadow: 0 0 #717a33;
     top: 4px;
 }
-.top span.clear:active {
+.top > .clear:active {
     top: 4px;
     box-shadow: 0 0 #d3545d;
 }
