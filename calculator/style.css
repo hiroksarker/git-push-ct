@@ -11,7 +11,7 @@ html {
 }
 #calculator {
     width: 325px;
-    height: auto;
+    height: 100%;
     margin: 100px auto;
     padding: 20px 20px 9px;
     background: #9dd2ea;
@@ -26,7 +26,7 @@ html {
     height: 40px;
     width: 212px;
     float: right;
-    padding: 0px 10px;
+    padding: 0 10px;
     background: rgba(0, 0, 0, 0.2);
     border-radius: 3px;
     box-shadow: 0 4px rgba(0, 0, 0, 0.2) inset;

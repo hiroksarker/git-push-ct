@@ -4,7 +4,8 @@ var decimalAdded = false;
 for (var i = 0; i < keys.length; i++) {
     keys[i].addEventListener("click", calculate);
 }
-function calculate(e){
+
+function calculate(e) {
     var input = document.querySelector('.screen');
     var inputVal = input.innerHTML;
     var btnVal = this.innerHTML;
@@ -41,6 +42,5 @@ function calculate(e){
     } else {
         input.innerHTML += btnVal;
     }
-    e.preventDefault();  
-
+    e.preventDefault();
 }
